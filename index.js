@@ -1,4 +1,5 @@
 'use strict';
+require('./patch');
 const download = require('download');
 const nodeNightlyVersion = require('node-nightly-version');
 const Configstore = require('configstore');
@@ -14,7 +15,7 @@ module.exports = {
         const os = process.platform;
         const arch = process.arch;
         const nightlyUrl = process.env.NODEJS_ORG_NIGHTLY_MIRROR || 'https://nodejs.org/download/nightly';
-        const url = `${nightlyUrl}/${latest}/node-${latest}-${os}-${arch}.tar`;
+        const url = `${nightlyUrl}/${latest}/node-${latest}-${os}-${arch}.tar.gz`;
         download(url, __dirname, {extract:true})
         .then( _ => {
           mv(`${__dirname}/node-${latest}-${os}-${arch}`, `${__dirname}/node-nightly`);

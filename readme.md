@@ -1,9 +1,12 @@
-# node-nightly
+# cnode-nightly
+
+> Fork from [node-nightly](https://github.com/hemanth/node-nightly),
+download node-nightly binary from China mirror https://npm.taobao.org/mirrors/node-nightly/
 
 ## Install
 
 ```
-$ npm install --global node-nightly
+$ npm install --global cnode-nightly
 ```
 
 
@@ -11,8 +14,8 @@ $ npm install --global node-nightly
 
 __For the first time:__
 
-```sh 
-$ node-nightly 
+```sh
+$ node-nightly
 Downloading the nightly version, hang on...
 
 

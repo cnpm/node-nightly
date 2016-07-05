@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 'use strict';
+require('./patch');
 const kexec = require('kexec');
 const nodeNightly = require('./');
 const existsSync = require('fs').existsSync;
